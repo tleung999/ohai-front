@@ -12,6 +12,16 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-eval' http://maxcdn.bootstrapcdn.com/",
+      'font-src': "'self' *",
+      'connect-src': "'self' localhost:3000/api/registrations",
+      'img-src': "'self'",
+      'style-src': "'self' *",
+      'media-src': "'self'"
+    },
+
 
     APP: {
       // Here you can pass flags/options to your application instance
