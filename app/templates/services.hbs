@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Kano</div>
+  <table class="table">
+  {{#each kanoServers}}
+      <p><a href="ssh://{{unbound public_dns}}">{{environment}}-{{service}}-{{role}}-{{name}}</a></p>
+  {{/each}}
+  </table>
+</div>
+
+{{#each}}
+  <p><a href="ssh://{{unbound public_dns}}">{{environment}}-{{service}}-{{role}}-{{name}}</a></p>
+{{/each}}

@@ -1,0 +1,8 @@
+// .panel.panel-default
+//   .panel-heading Kano
+//     table .table
+//       each kanoServers
+//         p: a href="ssh://{{unbound public_dns}}": environment service role name
+
+each
+  p: a href="ssh://{{unbound public_dns}}": environment service role name
